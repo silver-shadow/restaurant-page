@@ -1,8 +1,9 @@
 export default loadInitialPage;
+import '../style.css';
 
 function createHeader(text){
     const header = document.createElement('header');
-    header.setAttribute('id',"header");
+    // header.setAttribute('id',"header");
     const h1 = document.createElement('h1');
     h1.textContent = text;
     header.appendChild(h1);
@@ -21,6 +22,7 @@ function createNav() {
     nav.setAttribute('id', "nav");
   
     const homeBtn = createBtn('Home');
+    homeBtn.classList.add("current");
     const menuBtn = createBtn('Menu');
     const contactBtn = createBtn('Contact');
   
@@ -38,7 +40,7 @@ function createContent() {
 
 function createFooter(text) {
     const footer = document.createElement('footer');
-    footer.setAttribute('id', "footer");
+    // footer.setAttribute('id', "footer");
     const h3 = document.createElement('h3');
     h3.textContent = text;
     footer.appendChild(h3);
@@ -48,7 +50,7 @@ function createFooter(text) {
 function loadInitialPage()
 {
     const content = document.getElementById('content');
-    const header = createHeader("Basic Bites")
+    const header = createHeader("Basic Bytes");
     const nav = createNav();
     const tabContent = createContent();
     const footer = createFooter("The Odin Project");

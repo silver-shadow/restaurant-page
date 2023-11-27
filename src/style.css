@@ -1,0 +1,31 @@
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+header {
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+button {
+    font-size: large;
+    cursor:pointer;
+}
+
+.tab-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p {
+    padding: 0px 15px 0px 15px;
+}
